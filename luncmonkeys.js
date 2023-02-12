@@ -155,10 +155,27 @@ meshes({
   sx: 4, sy: 4, sz:4,
   cursor: 'pointer',
   function: [
-    function (object) { object.on('mouseover', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 0}, 500).start() }) },
-    function (object) { object.on('mouseover', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 10}, 500).start() }) },
-    function (object) { object.on('mouseover', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 20}, 500).start() }) },
-    function (object) { object.on('mouseover', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 30}, 500).start() }) },
+
+    function (object) {
+      object.on('mouseover', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 0}, 500).start() });
+      object.on('click', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 0}, 500).start() });
+    },
+
+    function (object) {
+      object.on('mouseover', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 10}, 500).start() });
+      object.on('click', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 10}, 500).start() });
+    },
+
+    function (object) {
+      object.on('mouseover', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 20}, 500).start() });
+      object.on('click', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 20}, 500).start() });
+    },
+
+    function (object) {
+      object.on('mouseover', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 30}, 500).start() });
+      object.on('click', (ev) => { new TWEEN.Tween(world_camera.position).to({x: 30}, 500).start() });
+    },
+
   ],
   group_function: function (name) {
     name.on('mouseover', (ev) => { name.material = skin_transparent });
