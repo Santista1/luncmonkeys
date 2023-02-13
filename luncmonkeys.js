@@ -51,8 +51,8 @@ room({
   cull: [false, false, false, false, false, true]
 });
 
-chair({geometry: box, material: wood, scene: world, width: 2, height: 1, depth: 0.5, thickness: 0.05, x: 5, y: -1.7, z: -2});
-lamp({material: [black, black, beige], scene: world, x: 3.5, z: -2, y: -0.45});
+chair({geometry: box, material: wood, scene: world, width: 2, height: 1, depth: 0.5, thickness: 0.05, x: 15, y: -1.7, z: -2});
+lamp({material: [black, black, beige], scene: world, x: 2.5, z: -2, y: -0.45});
 
 painting({
   geometry: box,
@@ -150,7 +150,7 @@ meshes({
   geometry: sphere,
   material: skin,
   x: [-24, -8, 8, 24],
-  y: 44,
+  y: 45,
   z: -1,
   sx: 4, sy: 4, sz:4,
   cursor: 'pointer',
